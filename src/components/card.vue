@@ -18,7 +18,7 @@
           rounded-full border border-transparent shadow
           hover:text-blue-700 hover:bg-white hover:border-blue-700"
         >
-          Play
+          View
         </span>
       </router-link>
     </div>

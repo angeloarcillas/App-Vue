@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import PunchIt from "../views/punch-it.vue";
+import todo from "../views/todos.vue";
 
 const routes = [
   {
@@ -19,8 +20,12 @@ const routes = [
   },
   {
     path: "/punch-it",
-    component: PunchIt
-  }
+    component: PunchIt,
+  },
+  {
+    path: "/todos",
+    component: todo,
+  },
 ];
 
 const router = createRouter({

@@ -13,9 +13,9 @@
     </div>
     <div class="p-2 mb-4 bg-white rounded shadow">
       <card
-        title="Punch the sandbag"
-        description="A mini game where you click the bag or button to win."
-        uri="/punch-it"
+        title="Todos app"
+        description="Create a todo list"
+        uri="/todos"
       />
     </div>
   </div>

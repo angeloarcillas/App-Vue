@@ -4,13 +4,13 @@
       <div
         id="bag"
         class="flex items-end w-40 mx-auto mb-6 rounded"
-        :class="{ burst: ended }"
+        :class="{ 'bg-gray-300': ended }"
       >
         <div
           class="w-full bg-blue-400 cursor-pointer"
           :style="{ height: health + '%' }"
-          @click="punch"
-        ></div>
+          @click="punch">
+        </div>
       </div>
 
       <div class="flex justify-center mb-4">
@@ -18,18 +18,16 @@
           class="py-2 px-6 mr-2 text-sm text-white uppercase rounded bg-red-700"
           @click="punch"
           v-show="!ended"
-        >
-          punch
+          >punch
         </button>
         <button
           class="py-2 px-6 text-sm text-white uppercase rounded bg-gray-700"
           @click="reset"
-        >
-          reset
+          >reset
         </button>
       </div>
 
-      <p class="text-sm text-gray-700 text-center">
+      <p class="text-sm text-gray-700 text-center italic">
         Click the bag or punch to hit the bag
       </p>
     </div>
@@ -45,7 +43,7 @@ export default {
     };
   },
   methods: {
-    punch: function () {
+    punch() {
       this.health -= 10;
 
       if (this.health <= 0) {
@@ -53,7 +51,7 @@ export default {
       }
     },
 
-    reset: function () {
+    reset() {
       this.health = 100;
       this.ended = false;
     },
@@ -61,13 +59,9 @@ export default {
 };
 </script>
 
-  <style scoped>
+<style scoped>
 #bag {
   height: 50vh;
   border: 1px dashed #c4c4c4;
-}
-
-#bag.burst {
-  background-color: #f4f4f4;
 }
 </style>
