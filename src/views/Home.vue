@@ -18,6 +18,13 @@
         uri="/todos"
       />
     </div>
+    <div class="p-2 mb-4 bg-white rounded shadow">
+      <card
+        title="Calculator"
+        description="Online calculator"
+        uri="/calculator"
+      />
+    </div>
   </div>
 </template>
 

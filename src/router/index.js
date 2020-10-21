@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import PunchIt from "../views/punch-it.vue";
 import todo from "../views/todos.vue";
+import calculator from "../views/calculator.vue";
 
 const routes = [
   {
@@ -25,6 +26,10 @@ const routes = [
   {
     path: "/todos",
     component: todo,
+  },
+  {
+    path: "/calculator",
+    component: calculator,
   },
 ];
 
